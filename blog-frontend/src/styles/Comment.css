@@ -1,0 +1,94 @@
+.comment-form {
+  margin-bottom: 2rem;
+}
+
+.comment-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.comment-form textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.submit-comment-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-comment-btn:hover:not(:disabled) {
+  background-color: #229954;
+}
+
+.submit-comment-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.comments-list {
+  margin-top: 1rem;
+}
+
+.comment-item {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fafafa;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.comment-author {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.comment-date {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.comment-content {
+  color: #555;
+  line-height: 1.6;
+}
+
+.comment-actions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.comment-actions button {
+  background: none;
+  border: none;
+  color: #3498db;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.comment-actions button:hover {
+  text-decoration: underline;
+}
+
+.comment-actions .delete-btn {
+  color: #e74c3c;
+}

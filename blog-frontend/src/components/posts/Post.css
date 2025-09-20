@@ -1,0 +1,240 @@
+.post-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.create-post-btn {
+  background-color: #0d0d0d;
+  color: rgb(253, 252, 252);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.create-post-btn:hover {
+  background-color: #634646;
+}
+
+.posts-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.post-card {
+  background: rgb(224, 216, 216);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(200, 195, 195, 0.15);
+}
+
+.post-title {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.post-title h2 {
+  font-size: 1.5rem;
+}
+
+.post-meta {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.post-excerpt {
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.post-tags {
+  margin-top: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #e8f4fc;
+  color: #3498db;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+/* Post Detail */
+.post-detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-detail {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.post-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.post-meta {
+  color: #7f8c8d;
+  margin-bottom: 1rem;
+}
+
+.post-actions {
+  margin-top: 1rem;
+}
+
+.edit-btn, .delete-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.edit-btn {
+  background-color: #f39c12;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #e67e22;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.post-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.post-content p {
+  margin-bottom: 1rem;
+}
+
+.post-content h1, .post-content h2, .post-content h3 {
+  margin: 1.5rem 0 1rem 0;
+  color: #2c3e50;
+}
+
+.post-content code {
+  background-color: #f8f9fa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+.post-content pre {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.post-content pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Comments Section */
+.comments-section {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.comments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.toggle-comments-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-comments-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 0.5rem;
+}
+
+.pagination-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background: white;
+  color: #3498db;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: #f8f9fa;
+}
+
+.pagination-btn.active {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.pagination-btn:disabled {
+  color: #bdc3c7;
+  cursor: not-allowed;
+}
